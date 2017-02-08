@@ -1,0 +1,93 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	background-color: #ccc;
+}
+section.map-container{
+	width: 500px;
+	height: 500px;
+	position: absolute;
+	left: 50%;
+	margin-left: -250px;
+	top: 10%;
+	padding: 10px;
+	font-size: 0;
+	box-sizing: border-box;
+	background-color: #222;
+}
+div.position{
+	width: 160px;
+	height: 160px;
+	display: inline-block;
+    overflow: hidden;
+    font-size: 3rem;
+    color: #fff;
+    text-align: center;
+    line-height: 160px;
+    box-sizing: border-box;
+	border: 1px solid #FFFFAA;
+	cursor: default;
+}
+div.no-border-top{
+	border-top: 0;
+}
+div.no-border-left{
+	border-left: 0;
+}
+div.no-border-bottom{
+	border-bottom: 0;
+}
+div.no-border-right{
+	border-right: 0;
+}
+div.hint{
+	-webkit-animation: hintAnimate 0.5s linear 1s 3 alternate;
+	-o-animation: hintAnimate 0.5s linear 1s 3 alternate;
+	animation: hintAnimate 0.5s linear 1s 3 alternate;
+}
+@-webkit-keyframes hintAnimate{
+	from{
+		color: #fff;
+	}
+	50%{
+		color: red;
+	}
+	to{
+		color: #fff;
+	}
+}
+@-moz-keyframes hintAnimate{
+	from{
+		color: #fff;
+	}
+	50%{
+		color: red;
+	}
+	to{
+		color: #fff;
+	}
+}
+@-o-keyframes hintAnimate{
+	from{
+		color: #fff;
+	}
+	50%{
+		color: red;
+	}
+	to{
+		color: #fff;
+	}
+}
+@keyframes hintAnimate{
+	from{
+		color: #fff;
+	}
+	50%{
+		color: red;
+	}
+	to{
+		color: #fff;
+	}
+}
