@@ -76,6 +76,7 @@ class Dialog{
 			document.body.appendChild(this[_dialogEle]);
 		}
 		let self = this;
+		document.body.style.overflow = "hidden";
 		setTimeout(function () {
 			ElementClassNameHandlerUtils.removeElementClassName(self[_dialogEle], "close");
 		}, 0);
@@ -86,6 +87,7 @@ class Dialog{
 	 * unpopup the dialog
 	 */
 	close() {
+		document.body.style.overflow = "scroll";
 		ElementClassNameHandlerUtils.addElementClassName(this[_dialogEle], "close");
 	}
 

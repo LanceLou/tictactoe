@@ -269,6 +269,7 @@
 					document.body.appendChild(this[_dialogEle]);
 				}
 				var self = this;
+				document.body.style.overflow = "hidden";
 				setTimeout(function () {
 					_utils.ElementClassNameHandlerUtils.removeElementClassName(self[_dialogEle], "close");
 				}, 0);
@@ -282,6 +283,7 @@
 		}, {
 			key: 'close',
 			value: function close() {
+				document.body.style.overflow = "scroll";
 				_utils.ElementClassNameHandlerUtils.addElementClassName(this[_dialogEle], "close");
 			}
 
